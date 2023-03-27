@@ -1,0 +1,59 @@
+@import '../../assets/styles/variables.scss';
+
+.landing-page {
+
+  height: 100vh;
+
+  img {
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 5rem;
+  }
+
+  .line {
+    background-color: $black;
+    position: fixed;
+    width: 25px;
+    z-index: 1;
+
+    &.bottom-left {
+      bottom: 0;
+      height: 55%;
+      left: 100px;
+    }
+
+    &.bottom-right {
+      bottom: 0;
+      height: 45%;
+      left: 175px;
+    }
+
+    &.top-left {
+      top: 0;
+      height: 45%;
+      right: 175px;
+    }
+
+    &.top-right {
+      top: 0;
+      height: 55%;
+      right: 100px;
+    }
+  }
+
+  h2 {
+    font-family: 'Futura', sans-serif;
+    color: $black;
+    opacity: 0.8;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      cursor: none;
+    }
+  }
+}

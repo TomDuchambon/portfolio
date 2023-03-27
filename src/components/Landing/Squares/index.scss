@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variables.scss';
+
+.square-container {
+  position: relative;
+  display: flex;
+  margin-top: 125px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  .square {
+    height: 150px;
+    width: 150px;
+    opacity: 1;
+    z-index: 1;
+    //list types of transitions
+    transition: all 0.65s ease-in;
+
+    &.left {
+      background-color: $red;
+      &.clicked {
+        background-color: $black;
+        cursor: none;
+        outline: none;
+      }
+    }
+
+    &.middle {
+      background-color: $yellow;
+      &.clicked{
+        background-color: $black;
+        cursor: none;
+        outline: none;
+      }
+    }
+
+    &.right {
+      background-color: $blue;
+      &.clicked{
+        background-color: $black;
+        cursor: none;
+      }
+    }
+  }
+}

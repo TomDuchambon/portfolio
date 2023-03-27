@@ -1,0 +1,203 @@
+@import '../../assets/styles/variables.scss';
+
+
+.projects-page {
+  height: 100vh;
+  width: 100vw;
+  // position: relative;
+
+  .link-container {
+    position: fixed;
+    max-height: 50vh;
+    height: 50vh;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    z-index: 3;
+    justify-content: space-around;
+    text-orientation: upright;
+
+
+    a {
+      margin-top: 5%;
+      position: sticky;
+      color: $black;
+      font-family: 'Futura', sans-serif;
+      opacity: 2;
+      animation: appear 3s ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+      opacity: 0;
+      text-orientation: upright;
+      word-break: break-word;
+
+      &:hover {
+        cursor: none;
+        transition: 0.6s;
+        color: #E4D5BB;
+        text-decoration: overline
+      }
+    }
+
+    .melo-link {
+      font-size: 11vw;
+      width: 33vw;
+    }
+
+    .deadgood-link {
+      font-size: 6vw;
+      width: 33vw;
+    }
+
+    .barb-link {
+      width: 33vw;
+      font-size: 6vw;
+    }
+
+    .link-separator {
+      position: relative;
+      height: 100%;
+      border-left: 4px solid $black;
+      transform-origin: bottom;
+      bottom: 0%;
+      opacity: 0;
+      animation: appear 3s ease-in-out;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+    }
+  }
+  .picasso-img {
+    // bottom: 50vh;
+    right: -12vw;
+    position: fixed;
+    width: 50%;
+    animation: slide-up 10s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: -3;
+  }
+
+  .round-menu {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.785);
+    position: fixed;
+    top: 30%;
+    left: 8%;
+    opacity: 0;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: $blue;
+    &:after {
+    content: 'Projects';
+    margin-top: -15px;
+    }
+  }
+
+  .line-back {
+    z-index: -4;
+  }
+
+  .triangle-menu-container {
+    width: 20px;
+    height: 147px;
+    border-left: 4px solid transparent;
+    border-right: 795px solid transparent;
+    border-bottom: 692px solid rgba(3, 98, 182, 0.8352941176);
+    position: fixed;
+    top: -135px;
+    left: 5.8vw;
+    z-index: -4;
+    opacity: 0;
+    animation: appear 2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+
+  .half-screen-blue {
+    background-color: $blue;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -2;
+    bottom: 0%;
+  }
+
+
+  .lightbulb-container {
+    position: fixed;
+    top: -5px;
+    left: 4.9vw;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .lightbulb {
+      transform: rotate(180deg);
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+      color: $black;
+
+      &.left-bulb {
+        animation: rotate 2s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+      }
+      &:hover {
+        cursor: none;
+        color: $yellow;
+      }
+      &.yellow-left {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: 0vh;
+  }
+  100% {
+    bottom: 50vh;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(155deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

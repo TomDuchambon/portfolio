@@ -1,0 +1,98 @@
+
+.background-lines {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+
+  div {
+    height: 150%;
+    border-left: 1.3px solid #000;
+    position: absolute;
+    transform-origin: bottom;
+    left: 50%;
+    bottom: 0%;
+    opacity: 0;
+    animation: expand 2s ease-in-out;
+    animation-fill-mode: forwards;
+    &:nth-child(n+2) {
+      animation: spread 2.6s ease-in;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+  .vl-center {
+    transform: translateX(-50%);
+  }
+  .vl-r1 {
+    transform: rotate(5.7deg);
+  }
+  .vl-r2 {
+    transform: rotate(10deg);
+  }
+  .vl-r3 {
+    transform: rotate(18deg);
+  }
+  .vl-r4 {
+    transform: rotate(25deg);
+  }
+  .vl-r5 {
+    transform: rotate(34deg);
+  }
+  .vl-r6 {
+    transform: rotate(40.8deg);
+  }
+  .vl-l1 {
+    transform: rotate(-5.7deg);
+  }
+  .vl-l2 {
+    transform: rotate(-10deg);
+  }
+  .vl-l3 {
+    transform: rotate(-18deg);
+  }
+  .vl-l4 {
+    transform: rotate(-25deg);
+  }
+  .vl-l5 {
+    transform: rotate(-34deg);
+  }
+  .vl-l6 {
+    transform: rotate(-40.8deg);
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scaleY(0);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scaleY(1.5);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes spread {
+    0% {
+      transform:rotate(0);
+      opacity: 0;
+    }
+    20% {
+      transform: rotate(0);
+      opacity: 0;
+    }
+    50% {
+      transform: rotate(1.5);
+      opacity: 0.6;
+    }
+    100% {
+      transform: rotate(1);
+      opacity: 0.6;
+    }
+  }
