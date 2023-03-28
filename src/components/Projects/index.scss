@@ -4,7 +4,6 @@
 .projects-page {
   height: 100vh;
   width: 100vw;
-  // position: relative;
 
   .link-container {
     position: fixed;
@@ -71,13 +70,16 @@
       animation-delay: 4s;
     }
   }
+
+
   .picasso-img {
-    // bottom: 50vh;
     right: -12vw;
     position: fixed;
-    width: 50%;
-    animation: slide-up 10s ease-in-out;
+    width: 48%;
+    opacity: 0;
+    animation: slide-up 5s ease-in-out;
     animation-fill-mode: forwards;
+    animation-delay: 5s;
     z-index: -3;
   }
 
@@ -100,14 +102,16 @@
     font-size: 35px;
     font-weight: 600;
     color: $blue;
+
     &:after {
-    content: 'Projects';
-    margin-top: -15px;
+      content: 'Projects';
+      margin-top: -15px;
     }
   }
 
   .line-back {
     z-index: -4;
+    animation-delay: 6s;
   }
 
   .triangle-menu-container {
@@ -126,6 +130,7 @@
     animation-delay: 2s;
   }
 
+  //--------------------------HALFSCREEN BLUE--------------------------
   .half-screen-blue {
     background-color: $blue;
     height: 50vh;
@@ -135,6 +140,7 @@
     bottom: 0%;
   }
 
+//-----------------------------LIGHTBULBS--------------------------
 
   .lightbulb-container {
     position: fixed;
@@ -153,7 +159,7 @@
       color: $black;
 
       &.left-bulb {
-        animation: rotate 2s ease-in-out;
+        animation: rotate-right 2s ease-in-out;
         animation-fill-mode: forwards;
         animation-delay: 0.5s;
       }
@@ -168,16 +174,19 @@
   }
 }
 
+//-----------------------------ANIMATIONS--------------------------
+
 @keyframes slide-up {
   0% {
     bottom: 0vh;
   }
   100% {
     bottom: 50vh;
+    opacity: 1;
   }
 }
 
-@keyframes rotate {
+@keyframes rotate-right {
   0% {
     transform: rotate(180deg);
   }

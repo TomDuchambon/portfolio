@@ -22,7 +22,7 @@ const Projects = () => {
         <NavLink exact="true" activeclassname="active" to="/projects">
         <FontAwesomeIcon icon={faLightbulb} className={`lightbulb left-bulb ${isYellow ? 'yellow-left' : ''}`}/>
         </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/home">
+        <NavLink exact="true" activeclassname="active" to="/about">
         <FontAwesomeIcon icon={faLightbulb} className={`lightbulb middle-bulb ${isYellow ? 'yellow-mid' : ''}`} />
         </NavLink>
         <NavLink exact="true" activeclassname="active" to="/contact">

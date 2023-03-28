@@ -1,0 +1,206 @@
+@import '../../assets/styles/variables.scss';
+
+
+.contact-page {
+  height: 100vh;
+  width: 100vw;
+
+  //--------------------------HALFSCREEN red--------------------------
+  .half-screen-red {
+    background-color: $red;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -2;
+    bottom: 0%;
+  }
+// ------------------------------TRIANGLE MENU---------------------------------
+  .triangle-menu-container {
+    width: 20px;
+    height: 147px;
+    border-left: 795px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 692px solid rgba(255, 40, 19, 0.70);
+    position: fixed;
+    top: -135px;
+    right: 5.8vw;
+    z-index: -4;
+    opacity: 0;
+    animation: appear 2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+ // ------------------------------ROUND MENU---------------------------------
+  .round-menu {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.785);
+    position: fixed;
+    top: 30%;
+    right: 8%;
+    opacity: 0;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: $red;
+
+    &:after {
+      content: 'Contact';
+      margin-top: -15px;
+    }
+  }
+// ------------------------------LIGHTBULB---------------------------------
+  .lightbulb-container {
+    position: fixed;
+    top: -5px;
+    left: 4.9vw;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .lightbulb {
+      transform: rotate(180deg);
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+      color: $black;
+
+      &.right-bulb {
+        animation: rotate 2s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+      }
+      &:hover {
+        cursor: none;
+        color: $yellow;
+      }
+      &.yellow-right {
+        color: $yellow;
+      }
+    }
+  }
+
+  //--------------------------LINE BACK--------------------------
+  .line-back {
+    z-index: -4;
+    animation-delay: 6s;
+  }
+//-----------------------------CONTACT FORM---------------------------
+  .contact-form {
+    height: 49%;
+    width: 37%;
+    margin-top: 20px;
+    left: 2vw;
+    position: fixed;
+    bottom: 0;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+        clear: both;
+      }
+
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      border: 0;
+      background: #EEDFCC;
+      height: 50px;
+      font-size: 16px;
+      color: $black;
+      padding: 0 20px;
+      box-sizing: border-box;
+      font-family: 'Futura';
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #EEDFCC;
+      height: 50px;
+      font-size: 16px;
+      color: $black;
+      padding: 20px;
+      min-height: 150px;
+      box-sizing: border-box;
+      font-family: 'Futura';
+    }
+
+    .flat-button {
+      color: $yellow;
+      background: $black;
+      font: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid $yellow;
+      float: left;
+      border-radius: 4px;
+
+      &:hover {
+        background: $yellow;
+        color: $black;
+        cursor: pointer;
+        text-decoration: overline;
+      }
+    }
+  }
+  //-----------------------------ANIMATIONS--------------------------
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(205deg);
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

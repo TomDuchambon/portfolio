@@ -14,7 +14,7 @@ const Landing = () => {
         <div className="line top-left" />
         <div className="line top-right" />
         </>
-      <h2>Turn all the squares black</h2>
+      <h2>Paint It, Black</h2>
     </div>
     </>
   )

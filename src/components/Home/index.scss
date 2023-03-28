@@ -17,22 +17,25 @@
     opacity: 0;
     animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 4s;
     z-index: -2;
   }
 
   .links {
-    position: sticky;
+    position: fixed;
     height: 136px;
-    top: 27vh;
+    width: 100vw;
+    top: 276px;
+    transform: translate(-50%, -50%);
+    left: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 700;
     z-index: 100;
+    margin: 0 auto;
 
     a {
       position: relative;
@@ -41,12 +44,14 @@
       opacity: 2;
       animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 3s;
+      animation-delay: 4s;
       opacity: 0;
+      text-decoration: none;
 
       &:hover {
         cursor: none;
         transition: 0.6s;
+        text-decoration: underline;
         &:nth-child(1) {
           color: $blue;
         }

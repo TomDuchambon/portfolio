@@ -1,0 +1,144 @@
+@import '../../assets/styles/variables.scss';
+
+
+.about-page {
+  height: 100vh;
+  width: 100vw;
+
+  //--------------------------HALFSCREEN yellow--------------------------
+  .half-screen-yellow {
+    background-color: $yellow;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -2;
+    bottom: 0%;
+  }
+
+  .about-chair {
+    right: 2vw;
+    bottom: 0vh;
+    position: fixed;
+    width: 50%;
+    opacity: 0;
+    z-index: -1;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+// ------------------------------TEXT ZONE---------------------------------
+  .text-zone {
+    height: 50vh;
+    width: 54vw;
+    position: fixed;
+    margin-left: 10px;
+    bottom: 0;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 600;
+    color: $black;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    white-space: break-spaces;
+
+    p {
+      text-align: left;
+      text-align: justify;
+    }
+  }
+//--------------------------TRIANGLE MENU--------------------------
+  .triangle-menu-container {
+    width: 16px;
+    height: 145px;
+    border-left: 370px solid transparent;
+    border-right: 370px solid transparent;
+    border-bottom: 663px solid rgba(232, 181, 3, 0.74);
+    position: fixed;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -4;
+    opacity: 0;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+  }
+//--------------------------ROUND MENU--------------------------
+  .round-menu {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.785);
+    position: fixed;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 300px;
+    opacity: 0;
+    animation: appear 3s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+
+    &:after {
+      content: 'About';
+      margin-top: -15px;
+    }
+  }
+ //--------------------------LINE BACK--------------------------
+  .line-back {
+    z-index: -4;
+    animation-delay: 6s;
+  }
+//--------------------------LIGHTBULB--------------------------
+  .lightbulb-container {
+    position: fixed;
+    top: -5px;
+    left: 4.9vw;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .lightbulb {
+      transform: rotate(180deg);
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+      color: $black;
+
+      &:hover {
+        cursor: none;
+        color: $yellow;
+      }
+      &.yellow-mid {
+        color: $yellow;
+      }
+    }
+  }
+
+  //-----------------------------ANIMATIONS--------------------------
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
