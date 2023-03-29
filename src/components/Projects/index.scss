@@ -30,7 +30,7 @@
       opacity: 2;
       animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 3s;
+      animation-delay: 2s;
       opacity: 0;
       text-orientation: upright;
       word-break: break-word;
@@ -67,7 +67,7 @@
       opacity: 0;
       animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 3s;
+      animation-delay: 2s;
     }
   }
 
@@ -79,7 +79,7 @@
     opacity: 0;
     animation: slide-up 5s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 3s;
     z-index: -3;
   }
 
@@ -94,7 +94,7 @@
     opacity: 0;
     animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
     z-index: -2;
     display: flex;
     justify-content: center;

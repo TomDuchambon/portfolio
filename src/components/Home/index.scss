@@ -17,7 +17,7 @@
     opacity: 0;
     animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
     z-index: -2;
   }
 
@@ -44,7 +44,7 @@
       opacity: 2;
       animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 3s;
+      animation-delay: 2s;
       opacity: 0;
       text-decoration: none;
 
@@ -78,7 +78,7 @@
     opacity: 0;
     animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
 
   }
 
@@ -109,7 +109,7 @@
       width: 50px;
       z-index: 1;
       color: $black;
-      animation : appear 3s ease-in;
+      animation : appear 2s ease-in;
       animation-fill-mode: forwards;
       &:hover {
         cursor: none;
