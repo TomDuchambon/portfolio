@@ -39,9 +39,15 @@ const About = () => {
       <div className="half-screen-yellow">
       </div>
         <div className="text-zone">
-          <h1 className="about-title">Tom Duchambon</h1>
+          <h2 className="about-title">I'm Tom Duchambon</h2>
           <h3 className="about-subtitle">Full Stack Software Engineer</h3>
-          <p className="about-text">I am a full stack software engineer with a background in the arts. I have a passion for creating and building things. I am a problem solver and I love to learn new things. I am currently looking for a full time position as a software engineer.</p>
+          <p className="about-text">
+            London based with a background in the arts, music and fashion.
+            Passionate about design and technology.
+            Some of my recent projects including a mobile app called "Mélo" that acts as a digital promoter for emerging artists.
+            Currently teaching at Le Wagon coding bootcamp and working on my own projects.
+            Open to new opportunities. Feel free to contact me by turning the right bulb on !
+            </p>
         </div>
     </div>
   )

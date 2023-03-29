@@ -14,7 +14,7 @@
     z-index: -2;
     bottom: 0%;
   }
-
+// ------------------------------CHAIR PIC---------------------------------
   .about-chair {
     right: 2vw;
     bottom: 0vh;
@@ -61,7 +61,7 @@
     transform: translate(-50%, -50%);
     z-index: -4;
     opacity: 0;
-    animation: appear 3s ease-in-out;
+    animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
   }
@@ -77,7 +77,7 @@
     transform: translate(-50%, -50%);
     top: 300px;
     opacity: 0;
-    animation: appear 3s ease-in-out;
+    animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
     z-index: -2;
@@ -89,8 +89,9 @@
     color: black;
 
     &:after {
-      content: 'About';
+      content: 'About me';
       margin-top: -15px;
+      text-decoration: overline;
     }
   }
  //--------------------------LINE BACK--------------------------

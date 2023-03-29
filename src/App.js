@@ -1,5 +1,4 @@
 import './App.scss';
-// import $yellow from './assets/styles/variables.scss';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import background from './assets/images/paper-bg.png';
