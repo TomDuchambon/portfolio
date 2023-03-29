@@ -28,9 +28,9 @@
       color: $black;
       font-family: 'Futura', sans-serif;
       opacity: 2;
-      animation: appear 3s ease-in-out;
+      animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 4s;
+      animation-delay: 3s;
       opacity: 0;
       text-orientation: upright;
       word-break: break-word;
@@ -65,9 +65,9 @@
       transform-origin: bottom;
       bottom: 0%;
       opacity: 0;
-      animation: appear 3s ease-in-out;
+      animation: appear 2s ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 4s;
+      animation-delay: 3s;
     }
   }
 
@@ -92,7 +92,7 @@
     top: 30%;
     left: 8%;
     opacity: 0;
-    animation: appear 3s ease-in-out;
+    animation: appear 2s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3s;
     z-index: -2;
@@ -200,12 +200,6 @@
 @keyframes appear {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  70% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
