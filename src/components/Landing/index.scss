@@ -1,12 +1,12 @@
 @import '../../assets/styles/variables.scss';
 
 .landing-page {
-
   height: 100vh;
+  width: 100vw;
 
   img {
     position: relative;
-    height: 200px;
+    height: 14vw;
     object-fit: cover;
     transform: translateX(-50%);
     left: 50%;
@@ -16,31 +16,31 @@
   .line {
     background-color: $black;
     position: fixed;
-    width: 25px;
+    width: 1.8vw;
     z-index: 1;
 
     &.bottom-left {
       bottom: 0;
       height: 55%;
-      left: 100px;
+      left: 7vw;
     }
 
     &.bottom-right {
       bottom: 0;
       height: 45%;
-      left: 175px;
+      left: 12vw;
     }
 
     &.top-left {
       top: 0;
       height: 45%;
-      right: 175px;
+      right: 12vw;
     }
 
     &.top-right {
       top: 0;
       height: 55%;
-      right: 100px;
+      right: 7vw;
     }
   }
 
@@ -48,12 +48,9 @@
     font-family: 'Futura', sans-serif;
     color: $black;
     opacity: 0.8;
-    font-size: 35px;
+    font-size: 2.5vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    &:hover {
-      cursor: none;
-    }
   }
 }
