@@ -32,7 +32,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message sent, I will contact you soon!')
-          window.location.reload(false)
+          window.location.reload(true)
         },
         (error) => {
           alert('Message failed to send, please try again')
