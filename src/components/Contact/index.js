@@ -32,7 +32,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message sent, I will contact you soon!')
-          // window.location.reload(true)
+          refForm.current.reset()
         },
         (error) => {
           alert('Message failed to send, please try again')
@@ -81,7 +81,7 @@ const Contact = () => {
       </ul>
           <img src={London} alt="Location" className='london-map' />
     </div><div className='contact-form'>
-        <form ref={refForm} onSubmit={sendEmail}>
+        <form autocomplete="off" ref={refForm} onSubmit={sendEmail}>
           <ul>
             <li className='half'>
               <input type="text" name='name' placeholder='Name' required />
