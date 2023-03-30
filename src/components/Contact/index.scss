@@ -40,14 +40,15 @@
       list-style: none;
       display: block;
       word-spacing: 20px;
+      padding: 0;
     }
 
     a {
       text-decoration: none;
       color: $black;
-      font-size: 69px;
+      font-size: 5.7vw;
       font-weight: 600;
-      margin: 10px;
+      margin: 4%;
       &:hover {
         color: whitesmoke;
         cursor: pointer;
