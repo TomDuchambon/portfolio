@@ -58,16 +58,16 @@
   }
 //------------------------------PROFILE PIC------------------------------------
   .profile-img {
-    right: 64vw;
     bottom: 37vh;
-    position: fixed;
-    height: 81%;
-    opacity: 0;
-    z-index: -1;
     filter: grayscale(100%);
+    opacity: 0;
+    position: fixed;
+    right: 62vw;
+    width: 60vh;
+    z-index: -1;
     animation: appear 3s ease-in-out;
-    animation-fill-mode: forwards;
     animation-delay: 2s;
+    animation-fill-mode: forwards;
   }
 // ------------------------------TRIANGLE MENU---------------------------------
   .triangle-menu-container {
