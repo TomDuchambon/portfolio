@@ -81,7 +81,7 @@ const Contact = () => {
       </ul>
           <img src={London} alt="Location" className='london-map' />
     </div><div className='contact-form'>
-        <form autocomplete="off" ref={refForm} onSubmit={sendEmail}>
+        <form ref={refForm} onSubmit={sendEmail}>
           <ul>
             <li className='half'>
               <input type="text" name='name' placeholder='Name' required />
@@ -90,7 +90,7 @@ const Contact = () => {
               <input type="text" name='email' placeholder='Email' required />
             </li>
             <li>
-              <input placeholder='Subject' type='text' name='subject' required />
+              <input autocomplete="off" placeholder='Subject' type='text' name='subject' required />
             </li>
             <li>
               <textarea placeholder='Message' type='text' name='message' required>
