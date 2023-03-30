@@ -150,8 +150,8 @@
   }
 //-----------------------------CONTACT FORM---------------------------
   .contact-form {
-    height: 49%;
-    width: 37%;
+    height: 49vh1;
+    width: 37vw;
     margin-top: 20px;
     left: 2vw;
     position: fixed;
@@ -231,6 +231,12 @@
         text-decoration: overline;
         counter-reset: none;
       }
+
+      // &:active {
+      //   animation: fadeOutUp 1s ease-in-out;
+      //   animation-fill-mode: forwards;
+
+      // }
     }
   }
   //-----------------------------ANIMATIONS--------------------------
