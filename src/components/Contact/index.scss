@@ -66,8 +66,8 @@
     width: 60vh;
     z-index: -1;
     animation: appear 3s ease-in-out;
-    animation-delay: 2s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
   }
 // ------------------------------TRIANGLE MENU---------------------------------
   .triangle-menu-container {
@@ -113,36 +113,19 @@
     }
   }
 // ------------------------------LIGHTBULB---------------------------------
-  .lightbulb-container {
-    position: fixed;
-    top: -5px;
-    left: 4.9vw;
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    margin: 0 auto;
 
     .lightbulb {
-      transform: rotate(180deg);
-      height: 50px;
-      width: 50px;
-      z-index: 1;
-      color: $black;
 
       &.right-bulb {
         animation: rotate 2s ease-in-out;
         animation-fill-mode: forwards;
         animation-delay: 0.5s;
       }
-      &:hover {
-        cursor: none;
-        color: $yellow;
-      }
+
       &.yellow-right {
         color: $yellow;
       }
     }
-  }
 
   //--------------------------LINE BACK--------------------------
   .line-back {

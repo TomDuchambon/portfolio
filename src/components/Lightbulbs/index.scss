@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables.scss';
+
+.lightbulb-container {
+  position: fixed;
+  top: -5px;
+  left: 4.9vw;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  .lightbulb {
+    transform: rotate(180deg);
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    color: $black;
+
+    &:hover {
+      cursor: none;
+      color: $yellow;
+    }
+  }
+
+}

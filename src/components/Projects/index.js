@@ -1,34 +1,14 @@
-import { NavLink } from 'react-router-dom'
-import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLightbulb} from '@fortawesome/free-solid-svg-icons'
 import Lines from '.././Lines'
 import './index.scss'
 import Picasso from '../../assets/images/picasso.png'
+import Lightbulbs from '../Lightbulbs';
 
 const Projects = () => {
-  const [isYellow, setIsYellow] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsYellow(true);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="container projects-page">
       <Lines className="line-back"/>
-      <div className="lightbulb-container">
-        <NavLink exact="true" activeclassname="active" to="/projects">
-        <FontAwesomeIcon icon={faLightbulb} className={`lightbulb left-bulb ${isYellow ? 'yellow-left' : ''}`}/>
-        </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/about">
-        <FontAwesomeIcon icon={faLightbulb} className={`lightbulb middle-bulb ${isYellow ? 'yellow-mid' : ''}`} />
-        </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/contact">
-        <FontAwesomeIcon icon={faLightbulb} className="lightbulb right-bulb" />
-        </NavLink>
-        </div>
+        < Lightbulbs />
         <img src={Picasso} alt="picasso" className="picasso-img"/>
         <div className="round-menu">
         </div>
