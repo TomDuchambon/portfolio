@@ -5,6 +5,7 @@
   width: 100vw;
   position: relative;
 
+//-------------------------------ROUND MENU + LINKS----------------------------------
   .round-menu {
     width: 260px;
     height: 260px;
@@ -64,6 +65,7 @@
       }
     }
   }
+  //---------------------------------TRIANGLE MENU-----------------------------------
   .triangle-menu-container {
     width: 16px;
     height: 162px;
@@ -81,7 +83,7 @@
     animation-delay: 2s;
 
   }
-
+//---------------------------------HALF SCREAN RED-----------------------------------
   .half-screen-red {
     background-color: $red;
     height: 50vh;
@@ -93,35 +95,18 @@
     animation-fill-mode: forwards;
   }
 
-
-  .lightbulb-container {
-    position: fixed;
-    top: -5px;
-    left: 4.9vw;
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    margin: 0 auto;
-
-    .lightbulb {
-      transform: rotate(180deg);
-      height: 50px;
-      width: 50px;
-      z-index: 1;
-      color: $black;
-      animation : appear 2s ease-in;
-      animation-fill-mode: forwards;
-      &:hover {
-        cursor: none;
-        color: $yellow;
-      }
-      &.yellow {
-        color: $yellow;
-      }
+//---------------------------------LIGHBULBS-----------------------------------------
+  .lightbulb {
+    animation : appear 2s ease-in;
+    animation-fill-mode: forwards;
+    &.yellow-mid {
+      color: $yellow;
     }
   }
+
 }
 
+// ---------------------------------ANIMATIONS---------------------------------------
 @keyframes appear {
   0% {
     opacity: 0;
@@ -130,12 +115,13 @@
     opacity: 1;
   }
 }
-  @keyframes menu-appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.5;
-      z-index: 1;
-    }
+
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
