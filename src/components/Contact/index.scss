@@ -5,6 +5,7 @@
   height: 100vh;
   width: 100vw;
 
+
 //--------------------------HALFSCREEN red--------------------------
   .half-screen-red {
     background-color: $red;
@@ -23,9 +24,10 @@
     bottom: -1px;
     right: 2vw;
     border: 1px solid black;
-    animation: appear 2s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
+    // animation: appear 2s ease-in-out;
+    // animation-fill-mode: forwards;
+    // animation-delay: 2s;
+
 
     .london-map {
       width: 40%;

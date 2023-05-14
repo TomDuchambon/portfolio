@@ -42,46 +42,48 @@ const Contact = () => {
         </>
         <img className="profile-img" src={Profile} alt="contact" />
         <div className="half-screen-red" />
-        <div className="socials">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/tom-duchambon/" target="_blank" rel="noreferrer">
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/TomDuchambon" target="_blank" rel="noreferrer">
-                Github
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/33633833586" target="_blank" rel="noreferrer">
-                Phone
-              </a>
-            </li>
-        </ul>
-            <img src={London} alt="Location" className='london-map' />
-      </div><div className='contact-form'>
-          <form autocomplete="off" ref={refForm} onSubmit={sendEmail}>
+        <div className="contact-info">
+          <div className="socials">
             <ul>
-              <li className='half'>
-                <input type="text" name='name' placeholder='Name' required />
-              </li>
-              <li className='half'>
-                <input type="text" name='email' placeholder='Email' required />
+              <li>
+                <a href="https://www.linkedin.com/in/tom-duchambon/" target="_blank" rel="noreferrer">
+                  Linkedin
+                </a>
               </li>
               <li>
-                <input placeholder='Subject' type='text' name='subject' required />
+                <a href="https://github.com/TomDuchambon" target="_blank" rel="noreferrer">
+                  Github
+                </a>
               </li>
               <li>
-                <textarea placeholder='Message' type='text' name='message' required>
-                </textarea>
+                <a href="https://wa.me/33633833586" target="_blank" rel="noreferrer">
+                  Phone
+                </a>
               </li>
-              <li>
-                <input type='submit' className='flat-button' value={'SEND'} />
-              </li>
-            </ul>
-          </form>
+          </ul>
+              <img src={London} alt="Location" className='london-map' />
+        </div><div className='contact-form'>
+            <form autocomplete="off" ref={refForm} onSubmit={sendEmail}>
+              <ul>
+                <li className='half'>
+                  <input type="text" name='name' placeholder='Name' required />
+                </li>
+                <li className='half'>
+                  <input type="text" name='email' placeholder='Email' required />
+                </li>
+                <li>
+                  <input placeholder='Subject' type='text' name='subject' required />
+                </li>
+                <li>
+                  <textarea placeholder='Message' type='text' name='message' required>
+                  </textarea>
+                </li>
+                <li>
+                  <input type='submit' className='flat-button' value={'SEND'} />
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
     </div>
   </>

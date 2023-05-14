@@ -10,12 +10,8 @@ const Squares = () => {
   useEffect(() => {
     const allBlack = clickedSquares.every((square) => square);
     if (allBlack) {
-      // setTimeout(() => {
-      // setSquareClass('zoom-out');
-      // console.log('zoom-out');
-      // }, 1000);
       setTimeout(() => {
-      navigate('home');
+        navigate('home');
       }, 1000);
     }
   }, [clickedSquares, navigate]);

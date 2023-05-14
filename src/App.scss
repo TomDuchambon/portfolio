@@ -8,6 +8,33 @@
   src: url(./assets/fonts/futura.woff2);
 }
 
+$breakpoints: (
+  phone-only: 599px,
+  tablet-portrait-up: 600px,
+  tablet-landscape-up: 900px,
+  desktop-up: 1200px,
+  big-desktop-up: 1800px
+);
+
+@mixin for-size($size) {
+  $width: map-get($breakpoints, $size);
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin phone-only {
+  @include for-size(phone-only) { @content; }
+}
+
+@mixin tablet-portrait-up {
+  @include for-size(tablet-portrait-up) { @content; }
+}
+
+@mixin desktop-up {
+  @include for-size(desktop-up) { @content; }
+}
+
 input,
 textarea {
   font-family: 'Futura';

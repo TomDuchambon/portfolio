@@ -22,7 +22,7 @@ const About = () => {
           <p className="about-text">
             London based with a background in the arts, music and fashion.
             Passionate about design and technology.
-            Some of my recent projects including a mobile app called "Mélo" that acts as a digital promoter for emerging artists.
+            Some of my recent projects include a mobile app called "Mélo" that acts as a digital promoter for emerging artists.
             Currently teaching at Le Wagon coding bootcamp and working on my own projects.
             Open to new opportunities. Feel free to contact me by turning the right bulb on !
             </p>

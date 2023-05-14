@@ -14,7 +14,7 @@ const Landing = () => {
         <div className="line top-left" />
         <div className="line top-right" />
         </>
-      <h2>Paint It, Black</h2>
+      <h2>Paint it, black.</h2>
     </div>
     </>
   )
