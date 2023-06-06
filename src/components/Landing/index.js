@@ -15,6 +15,7 @@ const Landing = () => {
         <div className="line top-right" />
         </>
       <h2>Paint it, black.</h2>
+      <p>Designed and build by Tom Duchambon ©</p>
     </div>
     </>
   )
